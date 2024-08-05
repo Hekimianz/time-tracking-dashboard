@@ -1,80 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Time tracking dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js"></script>
+  </head>
+  <body>
+    <main>
+      <section class="card__profile">
+        <div class="card__profile--top">
+          <img
+            src="./images/image-jeremy.png"
+            alt="Jeremy Robson profile image"
+          />
+          <div class="card__profile--text">
+            <span>Report for</span>
+            <h1>Jeremy Robson</h1>
+          </div>
+        </div>
+        <div class="card__profile--lower">
+          <button class="filterBtn">Daily</button>
+          <button class="filterBtn">Weekly</button>
+          <button class="filterBtn">Monthly</button>
+        </div>
+      </section>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Time tracking dashboard</title>
+      <section class="card card__work">
+        <div class="card__content">
+          <div class="card__content--upper">
+            <h2 class="category_title">Work</h2>
+            <img src="./images/icon-ellipsis.svg" alt="elipsis" />
+          </div>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+          <div class="card__content--lower">
+            <h3 class="time">32hrs</h3>
+            <span class="previousTime">Last week - 36hrs</span>
+          </div>
+        </div>
+      </section>
 
-  Report for
-  Jeremy Robson
+      <section class="card card__play">
+        <div class="card__content">
+          <div class="card__content--upper">
+            <h2 class="category_title">Play</h2>
+            <img src="./images/icon-ellipsis.svg" alt="elipsis" />
+          </div>
 
-  Daily
-  Weekly
-  Monthly
+          <div class="card__content--lower">
+            <h3 class="time">32hrs</h3>
+            <span class="previousTime">Last week - 36hrs</span>
+          </div>
+        </div>
+      </section>
 
-  Work
-  5hrs <!-- daily -->
-  Previous - 7hrs <!-- daily -->
-  32hrs <!-- weekly -->
-  Previous - 36hrs <!-- weekly -->
-  103hrs <!-- monthly -->
-  Previous - 128hrs <!-- monthly -->
+      <section class="card card__study">
+        <div class="card__content">
+          <div class="card__content--upper">
+            <h2 class="category_title">Study</h2>
+            <img src="./images/icon-ellipsis.svg" alt="elipsis" />
+          </div>
 
-  Play
-  1hr <!-- daily -->
-  Previous - 2hrs <!-- daily -->
-  10hrs <!-- weekly -->
-  Previous - 8hrs <!-- weekly -->
-  23hrs <!-- monthly -->
-  Previous - 29hrs <!-- monthly -->
+          <div class="card__content--lower">
+            <h3 class="time">32hrs</h3>
+            <span class="previousTime">Last week - 36hrs</span>
+          </div>
+        </div>
+      </section>
 
-  Study
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 7hrs <!-- weekly -->
-  13hrs <!-- monthly -->
-  Previous - 19hrs <!-- monthly -->
+      <section class="card card__exercise">
+        <div class="card__content">
+          <div class="card__content--upper">
+            <h2 class="category_title">Exercise</h2>
+            <img src="./images/icon-ellipsis.svg" alt="elipsis" />
+          </div>
 
-  Exercise
-  1hr <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 5hrs <!-- weekly -->
-  11hrs <!-- monthly -->
-  Previous - 18hrs <!-- monthly -->
+          <div class="card__content--lower">
+            <h3 class="time">32hrs</h3>
+            <span class="previousTime">Last week - 36hrs</span>
+          </div>
+        </div>
+      </section>
 
-  Social
-  1hr <!-- daily -->
-  Previous - 3hrs <!-- daily -->
-  5hrs <!-- weekly -->
-  Previous - 10hrs <!-- weekly -->
-  21hrs <!-- monthly -->
-  Previous - 23hrs <!-- monthly -->
+      <section class="card card__social">
+        <div class="card__content">
+          <div class="card__content--upper">
+            <h2 class="category_title">Social</h2>
+            <img src="./images/icon-ellipsis.svg" alt="elipsis" />
+          </div>
 
-  Self Care
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  2hrs <!-- weekly -->
-  Previous - 2hrs <!-- weekly -->
-  7hrs <!-- monthly -->
-  Previous - 11hrs <!-- monthly -->
+          <div class="card__content--lower">
+            <h3 class="time">32hrs</h3>
+            <span class="previousTime">Last week - 36hrs</span>
+          </div>
+        </div>
+      </section>
 
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+      <section class="card card__selfCare">
+        <div class="card__content">
+          <div class="card__content--upper">
+            <h2 class="category_title">Self Care</h2>
+            <img src="./images/icon-ellipsis.svg" alt="elipsis" />
+          </div>
+
+          <div class="card__content--lower">
+            <h3 class="time">32hrs</h3>
+            <span class="previousTime">Last week - 36hrs</span>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>

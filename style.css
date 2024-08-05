@@ -1,0 +1,35 @@
+:root {
+  --main-bg-color: #0e1323;
+  --profile-bg-color: #5747ea;
+  --work-bg-color: #ff8b64;
+  --play-pbg-color: #55c2e6;
+  --study-bg-color: #ff5e7d;
+  --exercise-bg-color: #4bcf82;
+  --social-bg-color: #7335d2;
+  --selfCare-bg-color: #f1c75b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  color: #fff;
+  font-family: "Rubik", sans-serif;
+}
+
+html,
+body,
+main {
+  min-height: 100vh;
+  width: 100%;
+}
+
+main {
+  background-color: var(--main-bg-color);
+  display: grid;
+  grid-template-rows: 203px repeat(6, 160px);
+}
