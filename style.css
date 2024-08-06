@@ -258,7 +258,22 @@ main {
     width: 100%;
   }
 
+  .timeCard {
+    cursor: pointer;
+  }
+
+  .timeCard:hover .card__content {
+    background-color: #33397a;
+  }
+
   .time {
     font-size: 5.6rem;
+  }
+  .card__content--upper img:hover {
+    filter: brightness(0) saturate(100%) contrast(100%) invert(100%);
+  }
+
+  .filterBtn:hover {
+    color: #fff;
   }
 }
