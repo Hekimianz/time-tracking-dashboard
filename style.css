@@ -174,3 +174,61 @@ main {
   border: 3px solid #fff;
   border-radius: 50%;
 }
+
+@media screen and (min-width: 768px) {
+  main {
+    grid-template-columns: repeat(4, 155px);
+    grid-template-rows: 244px 244px;
+    row-gap: 30px;
+    column-gap: 30px;
+    justify-content: center;
+  }
+
+  .card__profile {
+    grid-row: span 2;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .card__profile--top {
+    flex-direction: column;
+    gap: 43px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 60%;
+    padding: 2.7rem 1.7rem;
+  }
+
+  .card__profile--lower {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding: 0 1.7rem;
+    height: 20.8rem;
+  }
+
+  .profile__img {
+    width: 78px;
+    height: 78px;
+  }
+
+  .card__content {
+    height: 200px;
+    align-items: flex-start;
+    padding: 0 15px;
+    gap: 2.4rem;
+  }
+
+  .card__content--upper {
+    width: 100%;
+  }
+
+  .card__content--lower {
+    flex-direction: column;
+    width: 9rem;
+    gap: 9px;
+    align-items: flex-start;
+  }
+}
