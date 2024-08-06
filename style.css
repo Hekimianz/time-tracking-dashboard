@@ -129,8 +129,8 @@ main {
 
 .card__content {
   position: absolute;
-  bottom: 0;
-  height: 122px;
+  bottom: -0.5px;
+  height: 123px;
   background-color: var(--card-bg-color);
   width: 100%;
   border-radius: 15px;
@@ -147,6 +147,10 @@ main {
   align-items: center;
   justify-content: space-between;
   width: 279px;
+}
+
+.card__content--upper img {
+  cursor: pointer;
 }
 
 .category__title {
