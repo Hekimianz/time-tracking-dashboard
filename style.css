@@ -36,6 +36,7 @@ main {
   justify-items: center;
   row-gap: 24px;
   padding: 81px 0;
+  align-content: center;
 }
 
 .card__profile {
@@ -113,7 +114,7 @@ main {
 .card__exercise {
   background-color: var(--exercise-bg-color);
   background-image: url(./images/icon-exercise.svg);
-  background-position: 90% -5%;
+  background-position: 90% 0%;
 }
 
 .card__social {
@@ -227,8 +228,37 @@ main {
 
   .card__content--lower {
     flex-direction: column;
-    width: 9rem;
+    width: 100%;
     gap: 9px;
     align-items: flex-start;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  main {
+    grid-template-columns: repeat(4, 255px);
+    grid-template-rows: 244px 244px;
+  }
+
+  .card__profile--text h1 {
+    font-size: 4rem;
+  }
+
+  .card__profile--top {
+    height: 354px;
+    padding: 3.7rem 3.2rem;
+  }
+
+  .card__profile--lower {
+    height: 164px;
+    padding: 0 3.2rem;
+  }
+
+  .card__content--lower {
+    width: 100%;
+  }
+
+  .time {
+    font-size: 5.6rem;
   }
 }
